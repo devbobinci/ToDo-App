@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Todo app</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <div class="wrap">
+    <div class="todo-container">
+      <header>
+        <h1>todo</h1>
+        <img class="sun" src="./images/icon-sun.svg" alt="">
+        <img class="moon" src="./images/icon-moon.svg" alt="">
+      </header>
+      <form id="form">
+
+        <span class="input-border"><input type="text" placeholder="Create a new todo" id="todo">
+          <button class="input-btn"></button>
+        </span>
+        <ul id="todos" class="todos">
+          <div class="stic">
+            <p id="items-left">0 items left</p>
+            <p id="clear-compl">Clear Completed</p>
+          </div>
+        </ul>
+      </form>
+      <div class="options">
+        <p class="all-li start" onclick="allFun()">All</p>
+        <p class="active-li" onclick="activeFun()">Active</p>
+        <p class="completed-li" id="completed-el" onclick="completedFun()">Completed</p>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">imxbartus</a>.
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
